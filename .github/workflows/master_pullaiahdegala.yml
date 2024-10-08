@@ -16,8 +16,8 @@ jobs:
       - name: Set up Java version
         uses: actions/setup-java@v4
         with:
-          java-version: '1.8'  # Java version set to 1.8
-          distribution: 'microsoft'
+          java-version: '1.8'  # Set to Java 1.8
+          distribution: 'temurin'  # Temurin supports Java 1.8
 
       - name: Build with Maven
         run: mvn clean install
